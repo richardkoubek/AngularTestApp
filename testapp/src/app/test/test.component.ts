@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
           <p>
           {{2 + 2}}
           </p>
+          <h2>
+          {{"maybe " + name}}
+          </h2>
           `,
   styleUrl: './test.component.css'
 })
