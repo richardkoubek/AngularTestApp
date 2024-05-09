@@ -12,10 +12,16 @@ import { Component } from '@angular/core';
           <h2>
           {{"maybe " + name}}
           </h2>
+          <p>{{name.length}}</p>
+          <p>{{name.toUpperCase()}}</p>
+          <p>{{greetUser()}}</p>
           `,
   styleUrl: './test.component.css'
 })
 export class TestComponent {
   public name = "this also works";
   constructor () { }
+  greetUser(){
+    return "AND " + this.name;
+  }
 }
